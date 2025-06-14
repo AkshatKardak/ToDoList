@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+.container{
+    background: linear-gradient(rgba(255, 0, 140, 0.709), rgb(68, 21, 177));
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.todo-app{
+padding:70px;
+margin:40px;
+background: linear-gradient(1deg, #fbc2eb 0%, #a6c1ee 100%);
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+border-radius:5px;
+width:100%;
+}
+.todo-app h2{
+    font-weight: 300;
+   font-size: larger;
+   color:white;
+   gap:10px;
+}
+.header-icon{
+    width:80px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    height:auto;
+    margin-bottom:25px;
+}
+.row{
+display:flex;
+    justify-content: space-between;
+    align-items:center;
+background: #e3ecfa;
+ border-radius:30px;
+ padding:12px 20px;
+ margin-bottom:25px;
+}
+.row input{
+  background: linear-gradient(1deg, #fbc2eb 0%, #a6c1ee 100%);
+  transition: transform 0.3 ease;
+  cursor: pointer;
+  border-radius:20px;
+  padding:2px;
+  font-size:16px;
+}
+.row input:focus,
+.row input:hover {
+  box-shadow: 0 0 8px 2px #a6c1ee;
+  transform: scale(1.04);
+}
+button{
+font-size:16px;
+cursor:pointer;
+ background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+ padding:5px;
+ border-radius:30px;
+ transition: background 0.3s ease, transform 0.2 ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff7eb3 0%, #65c7f7 100%);
+    color: #fff;
+    transform: scale(1.05);
+
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #333; 
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(square-small.png); 
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: red;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png); 
+}
+
+ul li span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}

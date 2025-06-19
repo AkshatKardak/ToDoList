@@ -24,9 +24,11 @@ A simple and user-friendly web-based To-Do List application built using **HTML**
 ## 📦 INSTALLATION
 
 **Clone the Repository:**
+```sh
 git clone https://github.com/AkshatKardak/ToDoList.git
 
 cd ToDoList
+```
 
 ---
 # Contributors
